@@ -132,13 +132,13 @@ body
     border-top-right-radius: 3px;
 }
 .karta__picture--1 {
-    background-image: linear-gradient(to right bottom, #A50707, #873333), url(/img/page/clown.jpg);
+    background-image: linear-gradient(to right bottom, #A50707, #873333), url(img/page/clown.jpg);
 }
 .karta__picture--2 {
-    background-image: linear-gradient(to right bottom, #166C81, #095264), url(/img/page/dino.jpg);
+    background-image: linear-gradient(to right bottom, #166C81, #095264), url(img/page/dino.jpg);
 }
 .karta__picture--3 {
-    background-image: linear-gradient(to right bottom, #9E7C20, #9E7C20), url(/img/page/concert.jpg);
+    background-image: linear-gradient(to right bottom, #9E7C20, #9E7C20), url(img/page/concert.jpg);
 }
 .karta__heading {
     font-size: 1.5rem;

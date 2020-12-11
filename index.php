@@ -88,7 +88,7 @@
                     <div class="karta__cta">
                         <div class="karta__description-box">
                             <p class="karta__description-heading">Noc horrorów</p>
-                            <p class="karta__description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur modi perferendis omnis sapiente obcaecati vero excepturi voluptatibus fuga labore, eveniet ab numquam mollitia, non in voluptate voluptatum atque eligendi neque?</p>
+                            <p class="karta__description-text">Maraton klasycznych reprezentantów filmowego horroru. "Koszmar z Ulicy Wiązów", "Coś", "Halloween" i inne</p>
                         </div>
                         <a class="btn" style="background-color: #fff;" href="./details.php?EventID=9">Zobacz teraz</a>
                     </div>
@@ -110,7 +110,7 @@
                     <div class="karta__cta">
                         <div class="karta__description-box">
                             <p class="karta__description-heading">Noc muzeów</p>
-                            <p class="karta__description-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad tempore laudantium facere in ab repudiandae. Facilis inventore cumque nesciunt modi atque in voluptates cum alias minus, dolorem ipsam facere non!</p>
+                            <p class="karta__description-text">Muzeum Sztuki w Warszawie po raz kolejny zaprasza na udział w dorocznej Nocy Muzeów</p>
                         </div>
                         <a class="btn" style="background-color: #fff;" href="./details.php?EventID=7">Zobacz teraz</a>
                     </div>
@@ -132,7 +132,7 @@
                     <div class="karta__cta">
                         <div class="karta__description-box">
                             <p class="karta__description-heading">Koncert w arenie</p>
-                            <p class="karta__description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae dignissimos fugiat ratione praesentium, minus error voluptas, vitae dolore at nostrum nam veritatis velit repellat blanditiis, quos quo hic placeat?</p>
+                            <p class="karta__description-text">Koncert niespodzianka. Dalsze szczegóły wkrótce.</p>
                         </div>
                         <a class="btn" style="background-color: #fff;" href="./details.php?EventID=10">Zobacz teraz</a>
                     </div>
