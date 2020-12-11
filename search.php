@@ -49,7 +49,7 @@
 </head>
 <body>
 <?php include('components/navbar.html'); ?>
-    <div class="container" style="min-height: 85vh;">
+    <div class="container" style="padding-top: 50px">
         <div class="row">
             <div class="col-md-2 mt-4">
                 <div class="card text-center">
