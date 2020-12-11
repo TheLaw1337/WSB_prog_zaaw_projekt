@@ -125,6 +125,7 @@ require_once "config.php";
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="app.css" type="text/css">
 </head>
     <!-- załączenie zawartości panelu -->
@@ -152,7 +153,7 @@ require_once "config.php";
 
                         <div class="col-md-6">
                             <select id='type' name='type' class='custom-select' required>
-                                <option value="" selected>Typ event'u</option>
+                            <option value="" disabled selected>Wybierz typ</option>
                                 <!-- placeholder rozwijalnego pola -->
                                 <?php
                                     while(mysqli_stmt_fetch($types)){
@@ -168,7 +169,7 @@ require_once "config.php";
 
                         <div class="col-md-6">
                             <select id='place' name='place' class='custom-select' required>
-                                <option value="" selected>Miejsce event'u</option>
+                                <option value="" disabled selected>Wybierz miejsce</option>
                                 <!-- placeholder rozwijalnego pola -->
                                 <?php
                                     while(mysqli_stmt_fetch($places)){
@@ -176,10 +177,16 @@ require_once "config.php";
                                     }
                                 ?>
                             </select>
+                            <span>Dodaj nowe miejsce:
+                                <a href="newplace.php" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M11.75 4.5a.75.75 0 01.75.75V11h5.75a.75.75 0 010 1.5H12.5v5.75a.75.75 0 01-1.5 0V12.5H5.25a.75.75 0 010-1.5H11V5.25a.75.75 0 01.75-.75z"></path></svg></a>
+                            </span>
                         </div>
                     </div>
 
+                    
+
                     <div class="form-group row">
+                        
                         <label for="date" class="col-md-4 col-form-label text-md-right">Data</label>
 
                         <div class="col-md-6">

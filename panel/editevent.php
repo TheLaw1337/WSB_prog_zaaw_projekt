@@ -173,7 +173,7 @@ $result = $link->query($sql);
 
                         <div class="col-md-6">
                             <select id='type' name='type' class='custom-select' required>
-                                <option value="" selected>Typ event'u</option>
+                                <option value="" disabled selected>Wybierz typ</option>
                                 <!-- uzupełnienie pola o zapisaną wartość -->
                                 <?php
                                     while(mysqli_stmt_fetch($types)){
@@ -191,7 +191,8 @@ $result = $link->query($sql);
 
                         <div class="col-md-6">
                             <select id='place' name='place' class='custom-select' required>
-                                <option value="" selected>Miejsce event'u</option>
+                                <option value="" disabled selected>Wybierz miejsce</option>
+                                <!-- placeholder rozwijalnego pola -->
                                 <?php
                                     while(mysqli_stmt_fetch($places)){
                                         echo "<option value='".$placeID."' ";
@@ -200,6 +201,9 @@ $result = $link->query($sql);
                                     }
                                 ?>
                             </select>
+                            <span>Dodaj nowe miejsce:
+                                <a href="newplace.php" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M11.75 4.5a.75.75 0 01.75.75V11h5.75a.75.75 0 010 1.5H12.5v5.75a.75.75 0 01-1.5 0V12.5H5.25a.75.75 0 010-1.5H11V5.25a.75.75 0 01.75-.75z"></path></svg></a>
+                            </span>
                         </div>
                     </div>
 
