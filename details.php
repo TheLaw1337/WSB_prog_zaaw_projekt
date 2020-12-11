@@ -4,6 +4,7 @@
     
     $id = $_GET['EventID'];
     $sql = "SELECT Name, Description, Date, places.City, types.Type FROM events NATURAL JOIN places NATURAL JOIN types WHERE EventId = ".$id." LIMIT 1";
+    $sql2 = "SELECT path FROM photos WHERE EventID='.$id.'";
 
     $result = $link->query($sql);
     while ($rekord=$result->fetch_object()) {
@@ -12,6 +13,14 @@
     $eventCity = $rekord->City;
     $eventDate = $rekord->Date;
     $eventType = $rekord->Type;
+    // $eventPhotoPath = $rekord->path;
+
+    $result2 = $link->query($sql2);
+    while ($rekord=$result2->fetch_object()) {
+        if ($rekord != null) {
+            $eventPhotoPath = $rekord->path;
+        }
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -37,6 +46,7 @@
             <h4><?php echo $eventType; ?></h4>
             <h1><?php echo $eventName; ?></h1>
             <p><?php echo $eventCity; ?>, <?php echo $eventDate;?></p>
+            <p><img src="img/<?php echo $eventPhotoPath; ?>" style="max-width: 100%" alt="(brak zdjęcia)"></p>
             <p><?php echo $eventDesc; ?></p>
             <br>
             
