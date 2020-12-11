@@ -1,0 +1,191 @@
+body
+{
+    background-color: #f7f7f7;
+    padding-top: 50px;
+}
+
+.carousel-caption
+{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.caption-describe
+{
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn--carousel
+{
+    color: #fff;
+    font-size: 1.8vh;
+}
+
+@media only screen and (min-width : 481px) {
+    .flex-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex-row > [class*='col-'] {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-row.row:after, 
+    .flex-row.row:before {
+        display: flex;
+    }
+}
+
+@media (max-width: 560px) 
+{
+    h1
+    {
+        font-size: 1.9rem;
+    }
+
+    h2
+    {
+        font-size: 1.6rem;
+    }
+
+    .ev-describe
+    {
+        font-size: 0.9rem;
+    }
+}
+
+.bd-placeholder-img 
+{
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.img--center
+{
+    margin: auto auto;
+}
+
+#top
+{
+    color: #575757;
+    text-decoration: none;
+}
+
+
+/* card */
+.karta {
+    perspective: 120rem;
+    -moz-perspective: 120rem;
+    position: relative;
+    height: 30rem;
+    margin-top: 2rem;
+    background-color: transparent;
+    border: 0;
+}
+.karta__side {
+    height: 30rem;
+    transition: all 0.8s ease;
+    box-shadow: 0 0.9rem 3rem rgba(0, 0, 0, .15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.karta__side--front {
+    background-color: #fff;
+}
+.karta__side--back {
+    transform: rotateY(180deg);
+}
+.karta__side--back-1 {
+    background-image: linear-gradient(to right bottom, #D82424, #B91A1A);
+}
+.karta__side--back-2 {
+    background-image: linear-gradient(to right bottom, #45B7D4, #1B859F);
+}
+.karta__side--back-3 {
+    background-image: linear-gradient(to right bottom, #C69F36, #A9831A);
+}
+.karta:hover .karta__side--front {
+    transform: rotateY(-180deg);
+}
+.karta:hover .karta__side--back {
+    transform: rotateY(0);
+}
+.karta__picture {
+    background-size: cover;
+    height: 29rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.karta__picture--1 {
+    background-image: linear-gradient(to right bottom, #A50707, #873333), url(/img/page/clown.jpg);
+}
+.karta__picture--2 {
+    background-image: linear-gradient(to right bottom, #166C81, #095264), url(/img/page/dino.jpg);
+}
+.karta__picture--3 {
+    background-image: linear-gradient(to right bottom, #9E7C20, #9E7C20), url(/img/page/concert.jpg);
+}
+.karta__heading {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 22rem;
+    right: 2rem;
+    text-align: right;
+    width: 55%;
+}
+.karta__heading-span {
+    padding: 0.7rem 1.2rem;
+    line-height: 2.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+.karta__heading-span--1 {
+    background-image: linear-gradient(to right bottom, rgba(195, 22, 22, .85), rgba(151, 29, 29, .85));
+}
+.karta__heading-span--2 {
+    background-image: linear-gradient(to right bottom, rgba(27, 125, 149, .85), rgba(19, 104, 125, .85));
+}
+.karta__heading-span--3 {
+    background-image: linear-gradient(to right bottom, rgba(161, 126, 30, .85), rgba(139, 107, 18, .85));
+}
+
+.karta__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+.karta__description-box {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.karta__description-heading {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.karta__description-text {
+    font-size: 0.9rem;
+}
+.filters-form {
+    text-align: left;
+}
