@@ -14,7 +14,7 @@
                                 <hr class='dropdown-divider' style='color:white' id='line'/>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" id='sales' href="events.php">
-                                        <img src='/img/calendar-icon.svg'/>
+                                        <img src='../img/calendar-icon.svg'/>
                                         Eventy
                                     </a>
                                 </li>

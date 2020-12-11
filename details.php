@@ -4,7 +4,7 @@
     
     $id = $_GET['EventID'];
     $sql = "SELECT Name, Description, Date, places.City, types.Type FROM events NATURAL JOIN places NATURAL JOIN types WHERE EventId = ".$id." LIMIT 1";
-    $sql2 = "SELECT path FROM photos WHERE EventID='.$id.'";
+    $sql2 = "SELECT path FROM photos WHERE EventID=".$id." ORDER BY id DESC LIMIT 1";
 
     $result = $link->query($sql);
     while ($rekord=$result->fetch_object()) {

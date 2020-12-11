@@ -215,7 +215,7 @@ $result = $link->query($sql);
                         <label for="descr" class="col-md-4 col-form-label text-md-right">Opis</label>
 
                         <div class="col-md-6">
-                            <textarea class='form-control' rows='7' id='descr' name='descr' style="resize:none;" placeholder='Opis' required><?php echo htmlspecialchars($eventDesc)?>"</textarea>
+                            <textarea class='form-control' rows='7' id='descr' name='descr' style="resize:none;" placeholder='Opis' required><?php echo htmlspecialchars($eventDesc)?></textarea>
                         </div>
                     </div>
 
