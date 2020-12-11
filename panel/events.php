@@ -122,7 +122,7 @@ require_once "config.php";
                             if(mysqli_stmt_fetch($photos) && file_exists('../img/'.$path))
                                 echo "<td class='align-middle' style='width: 40%;'><img src='../img/".$path."' class='img-thumbnail align-middle' style='max-width:50%; min-width:6rem; height:auto;'/></td>";
                             else
-                                echo "<td class='align-middle' style='width: 40%;'><img src='/img/default.png' class='img-thumbnail align-middle' style='max-width:50%; min-width:6rem; height:auto;'/></td>";
+                                echo "<td class='align-middle' style='width: 40%;'><img src='../img/default.png' class='img-thumbnail align-middle' style='max-width:50%; min-width:6rem; height:auto;'/></td>";
                             echo "
                             <td class='align-middle'>".$name."</td>
                             <td class='align-middle'>".$date."</td>
