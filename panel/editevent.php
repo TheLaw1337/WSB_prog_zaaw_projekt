@@ -212,6 +212,7 @@ $result = $link->query($sql);
 
                         <div class="col-md-6">
                             <input type='datetime-local' class='form-control' name='date' id='date' value="<?php echo htmlspecialchars($eventDate)?>" required/>
+                            <span>Data w formacie YYYY-MM-DD HH:MM:SS</span>
                         </div>
                     </div>
 

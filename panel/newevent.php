@@ -191,6 +191,7 @@ require_once "config.php";
 
                         <div class="col-md-6">
                             <input type='datetime-local' class='form-control' name='date' id='date' required/>
+                            <span>Data w formacie YYYY-MM-DD HH:MM:SS</span>
                         </div>
                     </div>
 
