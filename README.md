@@ -8,7 +8,7 @@ Do uruchomienia aplikacji wymagany jest zainstalowany pakiet XAMPP.
 1. Otwórz terminal/wiersz polecenia w folderze `htdocs` XAMPPa (domyślnie `C:/xampp/htdocs`)
 3. Sklonuj repozytorium komendą `git clone https://github.com/TheLaw1337/WSB_prog_zaaw_projekt.git`
 4. Uruchom panel XAMPPa i włącz serwery Apache i MySQL
-5. Przejdź do phpMyAdmin (`localhost/phpmyadmin`) i utwórz bazę danych z pliku `projekt.sql`
+5. Przejdź do phpMyAdmin (`localhost/phpmyadmin`) i zaimportuj bazę danych z pliku `projekt.sql`
 
 Główna strona aplikacji jest dostępna pod adresem `localhost/projekt`
 
